@@ -27,7 +27,11 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      # enablement: true にしておくと、リポジトリ側で Pages を有効化していなくても
+      # このワークフローが自分で有効化する（設定画面での操作が要らない）
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
