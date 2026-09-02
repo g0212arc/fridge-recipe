@@ -231,3 +231,18 @@ button.small { padding: .3rem .7rem; font-size: .82rem; margin-top: .8rem; }
   input, select, button { font-size: 16px; }
   .hint, .meta, .tag, .sub, .count, .query { font-size: .8rem; }
 }
+
+/* --- ちょい足しの折りたたみ --- */
+details.miss-group > summary {
+  cursor: pointer; list-style: none;
+  display: flex; align-items: baseline; gap: .4rem;
+}
+details.miss-group > summary::-webkit-details-marker { display: none; }
+details.miss-group > summary::after {
+  content: '▾'; margin-left: auto; font-size: .8em; opacity: .7;
+  transition: transform .15s;
+}
+details.miss-group[open] > summary::after { transform: rotate(180deg); }
+.miss-label { font-weight: 700; }
+details.miss-group > summary .count { margin-left: 0; }
+.more-btn { display: block; width: 100%; margin: .3rem 0 1rem; }

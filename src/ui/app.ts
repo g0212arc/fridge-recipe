@@ -10,6 +10,9 @@ import * as store from './storage';
 
 const index = IngredientIndex.load();
 
+/** 「ちょい足し」の見出しを最初から出す数。残りはボタンで開く。 */
+const VISIBLE_GROUPS = 12;
+
 interface State {
   items: InventoryItem[];
   settings: Settings;
@@ -283,15 +286,41 @@ function renderSuggestions(): void {
   if (groups.length === 0) {
     box.append(el('p', { className: 'empty', textContent: '該当なし。' }));
   } else {
-    for (const group of groups) {
-      const wrap = el('div', { className: 'miss-group' }, [
-        el('div', { className: 'miss-head' }, [
-          `${group.label} を買うと`,
+    // 全部を開いて並べると画面が果てしなく長くなるので、見出しだけ並べて畳んでおく。
+    // 「まず何をひとつ買うか」を選ぶ画面として、このほうが見渡しやすい。
+    const renderGroup = (group: (typeof groups)[number], open: boolean): HTMLElement => {
+      const details = el('details', { className: 'miss-group', open }, [
+        el('summary', { className: 'miss-head' }, [
+          el('span', { className: 'miss-label', textContent: group.label }),
+          'を買うと',
           el('span', { className: 'count', textContent: `あと ${group.recipes.length} 品` }),
         ]),
       ]);
-      for (const match of group.recipes) wrap.append(recipeCard(match));
-      box.append(wrap);
+      for (const match of group.recipes) details.append(recipeCard(match));
+      return details;
+    };
+
+    const head = groups.slice(0, VISIBLE_GROUPS);
+    const tail = groups.slice(VISIBLE_GROUPS);
+    head.forEach((group, i) => box.append(renderGroup(group, i === 0)));
+
+    if (tail.length > 0) {
+      // 残りは「あと1品」の見出しが並びがちなので、畳んでおいて必要なときだけ出す
+      const rest = el('div', { className: 'rest-groups', hidden: true });
+      for (const group of tail) rest.append(renderGroup(group, false));
+
+      const more = el('button', {
+        type: 'button',
+        className: 'ghost more-btn',
+        textContent: `ほかに ${tail.length} 通りの買い足し方を見る`,
+      });
+      more.addEventListener('click', () => {
+        rest.hidden = !rest.hidden;
+        more.textContent = rest.hidden
+          ? `ほかに ${tail.length} 通りの買い足し方を見る`
+          : '閉じる';
+      });
+      box.append(more, rest);
     }
   }
 
