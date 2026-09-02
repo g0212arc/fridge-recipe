@@ -89,6 +89,15 @@ python3 tools/fetch_rakuten.py 豚肉 玉ねぎ キャベツ
 
 並び順は、使う食材が多いほど・賞味期限が近いほど上に来ます。
 
+## デプロイ
+
+`main` に push すると GitHub Actions がビルドして GitHub Pages に公開します。
+
+初回だけ、リポジトリの **Settings → Pages → Build and deployment → Source** を
+**「GitHub Actions」** にしてください。ここが未設定だとワークフローが
+`Get Pages site failed` で落ちます（ワークフローのトークンには Pages を
+作成する権限が無いため、この一手だけは手作業になります）。
+
 ## 開発
 
 ```bash

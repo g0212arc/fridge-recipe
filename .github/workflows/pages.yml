@@ -27,11 +27,10 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      # enablement: true にしておくと、リポジトリ側で Pages を有効化していなくても
-      # このワークフローが自分で有効化する（設定画面での操作が要らない）
+      # Pages の有効化はワークフローのトークンでは行えない
+      # （create-a-pages-site が Resource not accessible by integration で落ちる）。
+      # リポジトリの Settings → Pages → Source を "GitHub Actions" にする初回設定が要る。
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
