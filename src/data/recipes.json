@@ -1,0 +1,2647 @@
+{
+ "_comment": "同梱のレシピ集。出典を持たない一般的な家庭料理を書き起こしたもので、自由に配布できる。手順は各レシピサイトの検索へ誘導する。",
+ "recipes": [
+  {
+   "id": "builtin:karaage",
+   "title": "鶏の唐揚げ",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "ニンニク",
+    "しょうが",
+    "醤油",
+    "料理酒",
+    "片栗粉",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:chicken-nanban",
+   "title": "チキン南蛮",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏むね肉",
+    "卵",
+    "小麦粉",
+    "酢",
+    "砂糖",
+    "醤油",
+    "マヨネーズ",
+    "玉ねぎ",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:teriyaki-chicken",
+   "title": "鶏の照り焼き",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "料理酒",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:chicken-nambanzuke",
+   "title": "鶏むね肉の甘酢あん",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏むね肉",
+    "片栗粉",
+    "酢",
+    "砂糖",
+    "醤油",
+    "ケチャップ",
+    "ピーマン"
+   ]
+  },
+  {
+   "id": "builtin:yakitori-don",
+   "title": "焼き鳥丼",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "長ねぎ",
+    "ごはん",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "料理酒"
+   ]
+  },
+  {
+   "id": "builtin:chicken-cream",
+   "title": "鶏肉のクリーム煮",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "玉ねぎ",
+    "しめじ",
+    "牛乳",
+    "小麦粉",
+    "バター",
+    "コンソメ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:tebamoto-ni",
+   "title": "手羽元のさっぱり煮",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "手羽元",
+    "卵",
+    "しょうが",
+    "醤油",
+    "酢",
+    "砂糖",
+    "料理酒"
+   ]
+  },
+  {
+   "id": "builtin:sasami-ume",
+   "title": "ささみの梅しそ和え",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "鶏ささみ",
+    "きゅうり",
+    "梅干し",
+    "いりごま",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:chicken-yasai-itame",
+   "title": "鶏むね肉と野菜の中華炒め",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏むね肉",
+    "キャベツ",
+    "にんじん",
+    "ピーマン",
+    "片栗粉",
+    "鶏がらスープの素",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:tandoori",
+   "title": "タンドリーチキン",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "ヨーグルト",
+    "カレー粉",
+    "ケチャップ",
+    "ニンニク",
+    "しょうが",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:chicken-nabe",
+   "title": "鶏肉と白菜の煮物",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "白菜",
+    "にんじん",
+    "しいたけ",
+    "だし",
+    "醤油",
+    "みりん"
+   ]
+  },
+  {
+   "id": "builtin:sasami-tempura",
+   "title": "ささみの磯辺揚げ",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏ささみ",
+    "のり",
+    "小麦粉",
+    "片栗粉",
+    "醤油",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:chicken-mizore",
+   "title": "鶏むね肉のみぞれ煮",
+   "category": "肉のおかず",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏むね肉",
+    "大根",
+    "片栗粉",
+    "ポン酢",
+    "みりん",
+    "長ねぎ"
+   ]
+  },
+  {
+   "id": "builtin:shogayaki",
+   "title": "豚の生姜焼き",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚ロース肉",
+    "玉ねぎ",
+    "しょうが",
+    "醤油",
+    "みりん",
+    "料理酒",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:nikujaga",
+   "title": "肉じゃが",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "じゃがいも",
+    "玉ねぎ",
+    "にんじん",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:butakimchi",
+   "title": "豚キムチ",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚バラ肉",
+    "キムチ",
+    "ニラ",
+    "もやし",
+    "ごま油",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:tonkatsu",
+   "title": "とんかつ",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚ロース肉",
+    "卵",
+    "小麦粉",
+    "パン粉",
+    "キャベツ",
+    "サラダ油",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:buta-daikon",
+   "title": "豚バラ大根",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚バラ肉",
+    "大根",
+    "しょうが",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:hiyashabu",
+   "title": "冷しゃぶサラダ",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "レタス",
+    "トマト",
+    "きゅうり",
+    "ポン酢",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:buta-nira-moyashi",
+   "title": "豚肉とニラもやし炒め",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "ニラ",
+    "もやし",
+    "醤油",
+    "鶏がらスープの素",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:butajiru",
+   "title": "豚汁",
+   "category": "汁物",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "大根",
+    "にんじん",
+    "ごぼう",
+    "こんにゃく",
+    "長ねぎ",
+    "みそ",
+    "だし",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:buta-cabbage-mushi",
+   "title": "豚バラとキャベツの蒸し煮",
+   "category": "肉のおかず",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚バラ肉",
+    "キャベツ",
+    "料理酒",
+    "塩",
+    "こしょう",
+    "ポン酢"
+   ]
+  },
+  {
+   "id": "builtin:subuta",
+   "title": "酢豚",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "玉ねぎ",
+    "ピーマン",
+    "にんじん",
+    "片栗粉",
+    "酢",
+    "砂糖",
+    "ケチャップ",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:buta-nasu-miso",
+   "title": "豚肉となすのみそ炒め",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "なす",
+    "ピーマン",
+    "みそ",
+    "砂糖",
+    "みりん",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:buta-yasai-itame",
+   "title": "野菜炒め",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "キャベツ",
+    "にんじん",
+    "もやし",
+    "ピーマン",
+    "醤油",
+    "塩",
+    "こしょう",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:buta-jaga-cheese",
+   "title": "豚肉とじゃがいものチーズ焼き",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "じゃがいも",
+    "チーズ",
+    "牛乳",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:kakuni",
+   "title": "豚の角煮",
+   "category": "鍋・煮込み",
+   "indication": "1時間以上",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚バラ肉",
+    "しょうが",
+    "長ねぎ",
+    "醤油",
+    "砂糖",
+    "料理酒",
+    "みりん"
+   ]
+  },
+  {
+   "id": "builtin:buta-shabu-nabe",
+   "title": "豚しゃぶ鍋",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚バラ肉",
+    "白菜",
+    "長ねぎ",
+    "豆腐",
+    "しめじ",
+    "だし",
+    "ポン酢"
+   ]
+  },
+  {
+   "id": "builtin:gyudon",
+   "title": "牛丼",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "牛こま切れ肉",
+    "玉ねぎ",
+    "ごはん",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "料理酒",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:niku-udon",
+   "title": "肉うどん",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "うどん",
+    "牛こま切れ肉",
+    "長ねぎ",
+    "めんつゆ",
+    "砂糖",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:chinjao",
+   "title": "チンジャオロース風",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "牛こま切れ肉",
+    "ピーマン",
+    "たけのこ",
+    "片栗粉",
+    "オイスターソース",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:gyu-gobo",
+   "title": "牛肉とごぼうのしぐれ煮",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "牛こま切れ肉",
+    "ごぼう",
+    "しょうが",
+    "醤油",
+    "砂糖",
+    "みりん",
+    "料理酒"
+   ]
+  },
+  {
+   "id": "builtin:sukiyaki",
+   "title": "すき焼き",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "1,000円前後",
+   "source": "builtin",
+   "materials": [
+    "牛こま切れ肉",
+    "長ねぎ",
+    "白菜",
+    "豆腐",
+    "しいたけ",
+    "卵",
+    "醤油",
+    "砂糖",
+    "みりん"
+   ]
+  },
+  {
+   "id": "builtin:gyu-asparagus",
+   "title": "牛肉とアスパラのオイスター炒め",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "牛こま切れ肉",
+    "アスパラガス",
+    "オイスターソース",
+    "醤油",
+    "ニンニク",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:hamburg",
+   "title": "煮込みハンバーグ",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "合いびき肉",
+    "玉ねぎ",
+    "卵",
+    "パン粉",
+    "牛乳",
+    "ケチャップ",
+    "ウスターソース",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:mabo-dofu",
+   "title": "麻婆豆腐",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豆腐",
+    "豚ひき肉",
+    "長ねぎ",
+    "ニンニク",
+    "しょうが",
+    "豆板醤",
+    "みそ",
+    "醤油",
+    "片栗粉",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:soboro-don",
+   "title": "三色そぼろ丼",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏ひき肉",
+    "卵",
+    "ごはん",
+    "醤油",
+    "砂糖",
+    "みりん",
+    "しょうが"
+   ]
+  },
+  {
+   "id": "builtin:mabo-nasu",
+   "title": "麻婆なす",
+   "category": "肉のおかず",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "なす",
+    "豚ひき肉",
+    "長ねぎ",
+    "豆板醤",
+    "みそ",
+    "醤油",
+    "片栗粉",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:gyoza",
+   "title": "餃子",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豚ひき肉",
+    "キャベツ",
+    "ニラ",
+    "ニンニク",
+    "しょうが",
+    "餃子の皮",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:meat-sauce",
+   "title": "ミートソースパスタ",
+   "category": "麺類",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "合いびき肉",
+    "玉ねぎ",
+    "にんじん",
+    "トマト缶",
+    "ニンニク",
+    "オリーブオイル",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:tsukune",
+   "title": "鶏つくね",
+   "category": "肉のおかず",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏ひき肉",
+    "長ねぎ",
+    "卵",
+    "片栗粉",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "しょうが"
+   ]
+  },
+  {
+   "id": "builtin:piman-nikuzume",
+   "title": "ピーマンの肉詰め",
+   "category": "肉のおかず",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ピーマン",
+    "合いびき肉",
+    "玉ねぎ",
+    "パン粉",
+    "卵",
+    "ケチャップ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:hakusai-hikiniku",
+   "title": "白菜とひき肉のとろとろ煮",
+   "category": "鍋・煮込み",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "白菜",
+    "豚ひき肉",
+    "しょうが",
+    "鶏がらスープの素",
+    "片栗粉",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:taco-rice",
+   "title": "タコライス",
+   "category": "ごはんもの",
+   "indication": "約20分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "合いびき肉",
+    "レタス",
+    "トマト",
+    "チーズ",
+    "ごはん",
+    "ケチャップ",
+    "カレー粉",
+    "ウスターソース"
+   ]
+  },
+  {
+   "id": "builtin:harusame-soup",
+   "title": "春雨と豚ひき肉のスープ",
+   "category": "汁物",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "春雨",
+    "豚ひき肉",
+    "にんじん",
+    "長ねぎ",
+    "鶏がらスープの素",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:sake-muniel",
+   "title": "鮭のムニエル",
+   "category": "魚のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鮭",
+    "小麦粉",
+    "バター",
+    "レモン",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:sake-chanchan",
+   "title": "鮭のちゃんちゃん焼き",
+   "category": "魚のおかず",
+   "indication": "約20分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "鮭",
+    "キャベツ",
+    "玉ねぎ",
+    "にんじん",
+    "みそ",
+    "砂糖",
+    "みりん",
+    "バター"
+   ]
+  },
+  {
+   "id": "builtin:sake-nanban",
+   "title": "鮭の南蛮漬け",
+   "category": "魚のおかず",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "鮭",
+    "玉ねぎ",
+    "にんじん",
+    "ピーマン",
+    "片栗粉",
+    "酢",
+    "砂糖",
+    "醤油",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:saba-miso",
+   "title": "さばのみそ煮",
+   "category": "魚のおかず",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "さば",
+    "しょうが",
+    "みそ",
+    "砂糖",
+    "みりん",
+    "料理酒",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:saba-shioyaki",
+   "title": "さばの塩焼き",
+   "category": "魚のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "さば",
+    "塩",
+    "大根",
+    "レモン"
+   ]
+  },
+  {
+   "id": "builtin:saba-can-curry",
+   "title": "さば缶カレー",
+   "category": "ごはんもの",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "さば缶",
+    "玉ねぎ",
+    "トマト",
+    "カレー粉",
+    "ごはん",
+    "ニンニク",
+    "しょうが",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:buri-teriyaki",
+   "title": "ぶりの照り焼き",
+   "category": "魚のおかず",
+   "indication": "約15分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "ぶり",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "料理酒",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:buri-daikon",
+   "title": "ぶり大根",
+   "category": "鍋・煮込み",
+   "indication": "約1時間",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "ぶり",
+    "大根",
+    "しょうが",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "料理酒"
+   ]
+  },
+  {
+   "id": "builtin:tara-mushi",
+   "title": "たらの酒蒸し",
+   "category": "魚のおかず",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "たら",
+    "長ねぎ",
+    "しめじ",
+    "料理酒",
+    "塩",
+    "ポン酢"
+   ]
+  },
+  {
+   "id": "builtin:tara-chige",
+   "title": "たらのチゲ風スープ",
+   "category": "汁物",
+   "indication": "約20分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "たら",
+    "豆腐",
+    "白菜",
+    "長ねぎ",
+    "キムチ",
+    "みそ",
+    "鶏がらスープの素"
+   ]
+  },
+  {
+   "id": "builtin:aji-nanban",
+   "title": "あじの南蛮漬け",
+   "category": "魚のおかず",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "あじ",
+    "玉ねぎ",
+    "にんじん",
+    "酢",
+    "砂糖",
+    "醤油",
+    "片栗粉",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:iwashi-kabayaki",
+   "title": "いわしの蒲焼き",
+   "category": "魚のおかず",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "いわし",
+    "片栗粉",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:tuna-salad",
+   "title": "ツナと大根のサラダ",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ツナ缶",
+    "大根",
+    "きゅうり",
+    "マヨネーズ",
+    "醤油",
+    "いりごま"
+   ]
+  },
+  {
+   "id": "builtin:tuna-pasta",
+   "title": "ツナとトマトの冷製パスタ",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "ツナ缶",
+    "トマト",
+    "オリーブオイル",
+    "ニンニク",
+    "塩",
+    "こしょう",
+    "レモン"
+   ]
+  },
+  {
+   "id": "builtin:ebi-chili",
+   "title": "エビチリ",
+   "category": "魚のおかず",
+   "indication": "約20分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "えび",
+    "長ねぎ",
+    "ニンニク",
+    "しょうが",
+    "ケチャップ",
+    "豆板醤",
+    "片栗粉",
+    "鶏がらスープの素"
+   ]
+  },
+  {
+   "id": "builtin:ebi-mayo",
+   "title": "えびマヨ",
+   "category": "魚のおかず",
+   "indication": "約20分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "えび",
+    "片栗粉",
+    "マヨネーズ",
+    "ケチャップ",
+    "牛乳",
+    "砂糖",
+    "レタス"
+   ]
+  },
+  {
+   "id": "builtin:ika-daikon",
+   "title": "いかと大根の煮物",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "いか",
+    "大根",
+    "しょうが",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:chikuwa-isobe",
+   "title": "ちくわの磯辺揚げ",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ちくわ",
+    "のり",
+    "小麦粉",
+    "片栗粉",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:chikuwa-kyuri",
+   "title": "ちくわときゅうりの和え物",
+   "category": "サラダ・副菜",
+   "indication": "5分以内",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ちくわ",
+    "きゅうり",
+    "マヨネーズ",
+    "いりごま",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:asari-sakamushi",
+   "title": "あさりの酒蒸し",
+   "category": "魚のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "あさり",
+    "ニンニク",
+    "長ねぎ",
+    "料理酒",
+    "バター",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:oyakodon",
+   "title": "親子丼",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "鶏もも肉",
+    "玉ねぎ",
+    "卵",
+    "ごはん",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:omurice",
+   "title": "オムライス",
+   "category": "ごはんもの",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "卵",
+    "鶏もも肉",
+    "玉ねぎ",
+    "ごはん",
+    "ケチャップ",
+    "バター",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:dashimaki",
+   "title": "だし巻き卵",
+   "category": "卵・豆腐",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "卵",
+    "だし",
+    "醤油",
+    "砂糖",
+    "塩",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:tamago-yakisoba",
+   "title": "目玉焼き丼",
+   "category": "ごはんもの",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "卵",
+    "ごはん",
+    "醤油",
+    "ごま油",
+    "長ねぎ"
+   ]
+  },
+  {
+   "id": "builtin:tomato-tamago",
+   "title": "トマトと卵の炒め物",
+   "category": "卵・豆腐",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "トマト",
+    "卵",
+    "長ねぎ",
+    "鶏がらスープの素",
+    "塩",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:nira-tamago",
+   "title": "ニラ玉",
+   "category": "卵・豆腐",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ニラ",
+    "卵",
+    "鶏がらスープの素",
+    "醤油",
+    "ごま油",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:chawanmushi",
+   "title": "茶碗蒸し",
+   "category": "卵・豆腐",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "卵",
+    "鶏ささみ",
+    "しいたけ",
+    "かまぼこ",
+    "だし",
+    "醤油",
+    "みりん"
+   ]
+  },
+  {
+   "id": "builtin:egg-drop",
+   "title": "かき玉スープ",
+   "category": "汁物",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "卵",
+    "長ねぎ",
+    "鶏がらスープの素",
+    "片栗粉",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:scotch-egg",
+   "title": "味付け卵",
+   "category": "卵・豆腐",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "卵",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "料理酒"
+   ]
+  },
+  {
+   "id": "builtin:hiyayakko",
+   "title": "冷奴",
+   "category": "卵・豆腐",
+   "indication": "5分以内",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "豆腐",
+    "長ねぎ",
+    "しょうが",
+    "醤油",
+    "かつお節"
+   ]
+  },
+  {
+   "id": "builtin:agedashi",
+   "title": "揚げ出し豆腐",
+   "category": "卵・豆腐",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "豆腐",
+    "片栗粉",
+    "だし",
+    "醤油",
+    "みりん",
+    "大根",
+    "長ねぎ",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:iridofu",
+   "title": "炒り豆腐",
+   "category": "卵・豆腐",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "豆腐",
+    "にんじん",
+    "しいたけ",
+    "卵",
+    "醤油",
+    "砂糖",
+    "みりん",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:atsuage-yaki",
+   "title": "厚揚げの甘辛焼き",
+   "category": "卵・豆腐",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "厚揚げ",
+    "長ねぎ",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:abura-age-nasu",
+   "title": "なすと油揚げの煮浸し",
+   "category": "卵・豆腐",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "なす",
+    "油揚げ",
+    "だし",
+    "醤油",
+    "みりん",
+    "しょうが"
+   ]
+  },
+  {
+   "id": "builtin:natto-omelet",
+   "title": "納豆オムレツ",
+   "category": "卵・豆腐",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "納豆",
+    "卵",
+    "長ねぎ",
+    "醤油",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:tofu-hamburg",
+   "title": "豆腐ハンバーグ",
+   "category": "卵・豆腐",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "豆腐",
+    "鶏ひき肉",
+    "玉ねぎ",
+    "片栗粉",
+    "卵",
+    "醤油",
+    "みりん",
+    "砂糖"
+   ]
+  },
+  {
+   "id": "builtin:mapo-harusame",
+   "title": "豆腐とわかめのみそ汁",
+   "category": "汁物",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "豆腐",
+    "わかめ",
+    "長ねぎ",
+    "みそ",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:kinpira",
+   "title": "きんぴらごぼう",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ごぼう",
+    "にんじん",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "ごま油",
+    "いりごま",
+    "一味唐辛子"
+   ]
+  },
+  {
+   "id": "builtin:hourensou-ohitashi",
+   "title": "ほうれん草のおひたし",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ほうれん草",
+    "醤油",
+    "だし",
+    "かつお節"
+   ]
+  },
+  {
+   "id": "builtin:komatsuna-itame",
+   "title": "小松菜と油揚げの煮浸し",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "小松菜",
+    "油揚げ",
+    "だし",
+    "醤油",
+    "みりん"
+   ]
+  },
+  {
+   "id": "builtin:potato-salad",
+   "title": "ポテトサラダ",
+   "category": "サラダ・副菜",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "じゃがいも",
+    "きゅうり",
+    "にんじん",
+    "ハム",
+    "マヨネーズ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:jaga-bata",
+   "title": "じゃがバター",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "じゃがいも",
+    "バター",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:nikuyasai-nimono",
+   "title": "かぼちゃの煮物",
+   "category": "サラダ・副菜",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "かぼちゃ",
+    "だし",
+    "醤油",
+    "みりん",
+    "砂糖"
+   ]
+  },
+  {
+   "id": "builtin:daikon-nimono",
+   "title": "大根の煮物",
+   "category": "鍋・煮込み",
+   "indication": "約30分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "大根",
+    "鶏もも肉",
+    "だし",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "しょうが"
+   ]
+  },
+  {
+   "id": "builtin:furofuki-daikon",
+   "title": "ふろふき大根",
+   "category": "鍋・煮込み",
+   "indication": "約1時間",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "大根",
+    "みそ",
+    "砂糖",
+    "みりん",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:renkon-kinpira",
+   "title": "れんこんのきんぴら",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "れんこん",
+    "醤油",
+    "みりん",
+    "砂糖",
+    "ごま油",
+    "一味唐辛子"
+   ]
+  },
+  {
+   "id": "builtin:satoimo-nikkorogashi",
+   "title": "里芋の煮っころがし",
+   "category": "サラダ・副菜",
+   "indication": "約30分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "里芋",
+    "だし",
+    "醤油",
+    "みりん",
+    "砂糖"
+   ]
+  },
+  {
+   "id": "builtin:satsumaimo-lemon",
+   "title": "さつまいものレモン煮",
+   "category": "サラダ・副菜",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "さつまいも",
+    "レモン",
+    "砂糖",
+    "水"
+   ]
+  },
+  {
+   "id": "builtin:nasu-agebitashi",
+   "title": "なすの揚げ浸し",
+   "category": "サラダ・副菜",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "なす",
+    "ピーマン",
+    "だし",
+    "醤油",
+    "みりん",
+    "しょうが",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:nasu-dengaku",
+   "title": "なすの田楽",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "なす",
+    "みそ",
+    "砂糖",
+    "みりん",
+    "いりごま",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:piman-itame",
+   "title": "ピーマンとじゃこの炒め物",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ピーマン",
+    "ちりめんじゃこ",
+    "醤油",
+    "みりん",
+    "ごま油",
+    "いりごま"
+   ]
+  },
+  {
+   "id": "builtin:cabbage-bacon",
+   "title": "キャベツとベーコンの炒め物",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "キャベツ",
+    "ベーコン",
+    "ニンニク",
+    "オリーブオイル",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:cabbage-mentaiko",
+   "title": "キャベツの塩昆布和え",
+   "category": "サラダ・副菜",
+   "indication": "5分以内",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "キャベツ",
+    "塩昆布",
+    "ごま油",
+    "いりごま"
+   ]
+  },
+  {
+   "id": "builtin:coleslaw",
+   "title": "コールスロー",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "キャベツ",
+    "にんじん",
+    "コーン",
+    "マヨネーズ",
+    "酢",
+    "砂糖",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:hakusai-cream",
+   "title": "白菜のクリーム煮",
+   "category": "鍋・煮込み",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "白菜",
+    "ベーコン",
+    "牛乳",
+    "小麦粉",
+    "バター",
+    "コンソメ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:hakusai-sokuseki",
+   "title": "白菜の浅漬け",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "白菜",
+    "塩",
+    "昆布",
+    "一味唐辛子",
+    "いりごま"
+   ]
+  },
+  {
+   "id": "builtin:moyashi-namul",
+   "title": "もやしのナムル",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "もやし",
+    "ニンニク",
+    "ごま油",
+    "鶏がらスープの素",
+    "いりごま",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:moyashi-buta-ponzu",
+   "title": "もやしと豚肉のポン酢炒め",
+   "category": "肉のおかず",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "もやし",
+    "豚こま切れ肉",
+    "ポン酢",
+    "ごま油",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:broccoli-salad",
+   "title": "ブロッコリーとゆで卵のサラダ",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ブロッコリー",
+    "卵",
+    "マヨネーズ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:broccoli-garlic",
+   "title": "ブロッコリーのペペロン炒め",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ブロッコリー",
+    "ニンニク",
+    "一味唐辛子",
+    "オリーブオイル",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:kyuri-tataki",
+   "title": "たたききゅうり",
+   "category": "サラダ・副菜",
+   "indication": "5分以内",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "きゅうり",
+    "ニンニク",
+    "ごま油",
+    "醤油",
+    "いりごま",
+    "一味唐辛子"
+   ]
+  },
+  {
+   "id": "builtin:tomato-salad",
+   "title": "トマトとモッツァレラのサラダ",
+   "category": "サラダ・副菜",
+   "indication": "5分以内",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "トマト",
+    "チーズ",
+    "オリーブオイル",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:gobo-salad",
+   "title": "ごぼうサラダ",
+   "category": "サラダ・副菜",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ごぼう",
+    "にんじん",
+    "マヨネーズ",
+    "醤油",
+    "砂糖",
+    "すりごま"
+   ]
+  },
+  {
+   "id": "builtin:kabocha-salad",
+   "title": "かぼちゃサラダ",
+   "category": "サラダ・副菜",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "かぼちゃ",
+    "玉ねぎ",
+    "マヨネーズ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:kinoko-bata",
+   "title": "きのこのバター醤油炒め",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "しめじ",
+    "えのき",
+    "しいたけ",
+    "バター",
+    "醤油",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:kinoko-marinade",
+   "title": "きのこのマリネ",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "しめじ",
+    "エリンギ",
+    "玉ねぎ",
+    "オリーブオイル",
+    "酢",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:okra-ohitashi",
+   "title": "オクラのおひたし",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "オクラ",
+    "かつお節",
+    "醤油",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:goya-champuru",
+   "title": "ゴーヤチャンプルー",
+   "category": "野菜のおかず",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ゴーヤ",
+    "豆腐",
+    "豚バラ肉",
+    "卵",
+    "醤油",
+    "かつお節",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:zucchini-grill",
+   "title": "ズッキーニのチーズ焼き",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ズッキーニ",
+    "チーズ",
+    "オリーブオイル",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:asparagus-bacon",
+   "title": "アスパラのベーコン巻き",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "アスパラガス",
+    "ベーコン",
+    "こしょう",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:ninjin-shirishiri",
+   "title": "にんじんしりしり",
+   "category": "サラダ・副菜",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "にんじん",
+    "卵",
+    "ツナ缶",
+    "醤油",
+    "みりん",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:mizuna-salad",
+   "title": "水菜とツナのサラダ",
+   "category": "サラダ・副菜",
+   "indication": "5分以内",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "水菜",
+    "ツナ缶",
+    "のり",
+    "ポン酢",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:edamame-garlic",
+   "title": "枝豆のペペロン風",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "枝豆",
+    "ニンニク",
+    "一味唐辛子",
+    "オリーブオイル",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:corn-butter",
+   "title": "コーンバター",
+   "category": "サラダ・副菜",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "とうもろこし",
+    "バター",
+    "醤油",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:curry",
+   "title": "基本のカレーライス",
+   "category": "ごはんもの",
+   "indication": "約1時間",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚こま切れ肉",
+    "玉ねぎ",
+    "じゃがいも",
+    "にんじん",
+    "カレー粉",
+    "ごはん",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:hayashi",
+   "title": "ハヤシライス",
+   "category": "ごはんもの",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "牛こま切れ肉",
+    "玉ねぎ",
+    "しめじ",
+    "ケチャップ",
+    "ウスターソース",
+    "小麦粉",
+    "バター",
+    "ごはん"
+   ]
+  },
+  {
+   "id": "builtin:chahan",
+   "title": "チャーハン",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ごはん",
+    "卵",
+    "長ねぎ",
+    "ハム",
+    "醤油",
+    "塩",
+    "こしょう",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:kimchi-chahan",
+   "title": "キムチチャーハン",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ごはん",
+    "キムチ",
+    "豚こま切れ肉",
+    "卵",
+    "長ねぎ",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:takikomi",
+   "title": "きのこの炊き込みごはん",
+   "category": "ごはんもの",
+   "indication": "約1時間",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ごはん",
+    "しめじ",
+    "しいたけ",
+    "にんじん",
+    "油揚げ",
+    "醤油",
+    "みりん",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:katsudon",
+   "title": "カツ丼",
+   "category": "ごはんもの",
+   "indication": "約30分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "豚ロース肉",
+    "卵",
+    "玉ねぎ",
+    "ごはん",
+    "パン粉",
+    "小麦粉",
+    "醤油",
+    "みりん",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:tendon",
+   "title": "かき揚げ丼",
+   "category": "ごはんもの",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "えび",
+    "玉ねぎ",
+    "にんじん",
+    "小麦粉",
+    "卵",
+    "ごはん",
+    "醤油",
+    "みりん",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:ochazuke",
+   "title": "鮭茶漬け",
+   "category": "ごはんもの",
+   "indication": "5分以内",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ごはん",
+    "鮭",
+    "のり",
+    "わさび",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:onigiri",
+   "title": "焼きおにぎり",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ごはん",
+    "醤油",
+    "みりん",
+    "いりごま",
+    "のり"
+   ]
+  },
+  {
+   "id": "builtin:zosui",
+   "title": "卵雑炊",
+   "category": "ごはんもの",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "ごはん",
+    "卵",
+    "長ねぎ",
+    "だし",
+    "醤油",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:napolitan",
+   "title": "ナポリタン",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "ウインナー",
+    "玉ねぎ",
+    "ピーマン",
+    "ケチャップ",
+    "バター",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:carbonara",
+   "title": "カルボナーラ",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "ベーコン",
+    "卵",
+    "生クリーム",
+    "チーズ",
+    "こしょう",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:peperoncino",
+   "title": "ペペロンチーノ",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "ニンニク",
+    "一味唐辛子",
+    "オリーブオイル",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:wafu-pasta",
+   "title": "きのこの和風パスタ",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "しめじ",
+    "えのき",
+    "ベーコン",
+    "バター",
+    "醤油",
+    "のり"
+   ]
+  },
+  {
+   "id": "builtin:tarako-pasta",
+   "title": "たらこパスタ",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パスタ",
+    "たらこ",
+    "バター",
+    "牛乳",
+    "のり",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:yakisoba",
+   "title": "ソース焼きそば",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "中華麺",
+    "豚こま切れ肉",
+    "キャベツ",
+    "にんじん",
+    "もやし",
+    "ウスターソース",
+    "サラダ油"
+   ]
+  },
+  {
+   "id": "builtin:shio-yakisoba",
+   "title": "塩焼きそば",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "中華麺",
+    "豚こま切れ肉",
+    "キャベツ",
+    "もやし",
+    "鶏がらスープの素",
+    "塩",
+    "こしょう",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:ankake-yakisoba",
+   "title": "あんかけ焼きそば",
+   "category": "麺類",
+   "indication": "約20分",
+   "cost": "500円前後",
+   "source": "builtin",
+   "materials": [
+    "中華麺",
+    "豚こま切れ肉",
+    "白菜",
+    "にんじん",
+    "しいたけ",
+    "片栗粉",
+    "鶏がらスープの素",
+    "醤油",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:ramen-tanmen",
+   "title": "野菜たっぷりタンメン",
+   "category": "麺類",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "中華麺",
+    "豚こま切れ肉",
+    "キャベツ",
+    "もやし",
+    "にんじん",
+    "ニラ",
+    "鶏がらスープの素",
+    "塩",
+    "こしょう",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:kitsune-udon",
+   "title": "きつねうどん",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "うどん",
+    "油揚げ",
+    "長ねぎ",
+    "めんつゆ",
+    "砂糖",
+    "醤油"
+   ]
+  },
+  {
+   "id": "builtin:curry-udon",
+   "title": "カレーうどん",
+   "category": "麺類",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "うどん",
+    "豚こま切れ肉",
+    "玉ねぎ",
+    "長ねぎ",
+    "カレー粉",
+    "めんつゆ",
+    "片栗粉"
+   ]
+  },
+  {
+   "id": "builtin:yakiudon",
+   "title": "焼きうどん",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "うどん",
+    "豚こま切れ肉",
+    "キャベツ",
+    "にんじん",
+    "醤油",
+    "ウスターソース",
+    "かつお節"
+   ]
+  },
+  {
+   "id": "builtin:zaru-soba",
+   "title": "ざるそば",
+   "category": "麺類",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "そば",
+    "長ねぎ",
+    "わさび",
+    "めんつゆ",
+    "のり"
+   ]
+  },
+  {
+   "id": "builtin:tanuki-soba",
+   "title": "かけそば",
+   "category": "麺類",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "そば",
+    "長ねぎ",
+    "ほうれん草",
+    "めんつゆ",
+    "かまぼこ"
+   ]
+  },
+  {
+   "id": "builtin:somen-chample",
+   "title": "そうめんチャンプルー",
+   "category": "麺類",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "そうめん",
+    "豚バラ肉",
+    "ニラ",
+    "にんじん",
+    "醤油",
+    "かつお節",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:tonjiru-miso",
+   "title": "なめこと豆腐のみそ汁",
+   "category": "汁物",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "なめこ",
+    "豆腐",
+    "長ねぎ",
+    "みそ",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:asari-miso",
+   "title": "あさりのみそ汁",
+   "category": "汁物",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "あさり",
+    "長ねぎ",
+    "みそ",
+    "だし"
+   ]
+  },
+  {
+   "id": "builtin:kenchinjiru",
+   "title": "けんちん汁",
+   "category": "汁物",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "大根",
+    "にんじん",
+    "ごぼう",
+    "豆腐",
+    "こんにゃく",
+    "長ねぎ",
+    "醤油",
+    "だし",
+    "ごま油"
+   ]
+  },
+  {
+   "id": "builtin:minestrone",
+   "title": "ミネストローネ",
+   "category": "汁物",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "トマト缶",
+    "玉ねぎ",
+    "にんじん",
+    "じゃがいも",
+    "ベーコン",
+    "ニンニク",
+    "コンソメ",
+    "オリーブオイル",
+    "塩"
+   ]
+  },
+  {
+   "id": "builtin:corn-potage",
+   "title": "コーンポタージュ",
+   "category": "汁物",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "とうもろこし",
+    "玉ねぎ",
+    "牛乳",
+    "バター",
+    "コンソメ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:onion-soup",
+   "title": "オニオンスープ",
+   "category": "汁物",
+   "indication": "約30分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "玉ねぎ",
+    "バター",
+    "コンソメ",
+    "こしょう",
+    "パン",
+    "チーズ"
+   ]
+  },
+  {
+   "id": "builtin:chinese-soup",
+   "title": "わかめと卵の中華スープ",
+   "category": "汁物",
+   "indication": "約10分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "わかめ",
+    "卵",
+    "長ねぎ",
+    "鶏がらスープの素",
+    "ごま油",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:potato-pottage",
+   "title": "じゃがいもの冷製スープ",
+   "category": "汁物",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "じゃがいも",
+    "玉ねぎ",
+    "牛乳",
+    "バター",
+    "コンソメ",
+    "塩",
+    "こしょう"
+   ]
+  },
+  {
+   "id": "builtin:french-toast",
+   "title": "フレンチトースト",
+   "category": "パン・軽食",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パン",
+    "卵",
+    "牛乳",
+    "砂糖",
+    "バター",
+    "はちみつ"
+   ]
+  },
+  {
+   "id": "builtin:pizza-toast",
+   "title": "ピザトースト",
+   "category": "パン・軽食",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パン",
+    "チーズ",
+    "ピーマン",
+    "玉ねぎ",
+    "ベーコン",
+    "ケチャップ"
+   ]
+  },
+  {
+   "id": "builtin:tamago-sand",
+   "title": "たまごサンド",
+   "category": "パン・軽食",
+   "indication": "約15分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "パン",
+    "卵",
+    "マヨネーズ",
+    "塩",
+    "こしょう",
+    "からし"
+   ]
+  },
+  {
+   "id": "builtin:okonomiyaki",
+   "title": "お好み焼き",
+   "category": "パン・軽食",
+   "indication": "約30分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "キャベツ",
+    "豚バラ肉",
+    "卵",
+    "小麦粉",
+    "だし",
+    "ウスターソース",
+    "マヨネーズ",
+    "かつお節",
+    "のり"
+   ]
+  },
+  {
+   "id": "builtin:chijimi",
+   "title": "ニラチヂミ",
+   "category": "パン・軽食",
+   "indication": "約20分",
+   "cost": "300円前後",
+   "source": "builtin",
+   "materials": [
+    "ニラ",
+    "にんじん",
+    "小麦粉",
+    "片栗粉",
+    "卵",
+    "ごま油",
+    "醤油",
+    "酢"
+   ]
+  },
+  {
+   "id": "builtin:potato-mochi",
+   "title": "いももち",
+   "category": "パン・軽食",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "じゃがいも",
+    "片栗粉",
+    "バター",
+    "醤油",
+    "砂糖"
+   ]
+  },
+  {
+   "id": "builtin:french-fries",
+   "title": "フライドポテト",
+   "category": "パン・軽食",
+   "indication": "約20分",
+   "cost": "100円以下",
+   "source": "builtin",
+   "materials": [
+    "じゃがいも",
+    "片栗粉",
+    "塩",
+    "サラダ油"
+   ]
+  }
+ ]
+}

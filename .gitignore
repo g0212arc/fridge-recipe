@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+*.log
+
+# 楽天レシピAPIで取得したデータは配布できない（利用規約 第10条9項）ので、
+# リポジトリには絶対に入れない
+tools/out/
+*.rakuten.json
+.env
+__pycache__/
