@@ -15,8 +15,10 @@
   --radius: 12px;
   --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.04);
 }
+/* ダークのトークン。閲覧側の指定は3通りある（明示的なlight / 明示的なdark / OS任せ）。
+   OS任せのときだけメディアクエリが効き、明示指定があればそちらが勝つようにしておく。 */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #17181a;
     --surface: #202224;
     --surface-2: #282b2e;
@@ -31,6 +33,21 @@
     --danger-soft: #38241f;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
   }
+}
+:root[data-theme="dark"] {
+    --bg: #17181a;
+    --surface: #202224;
+    --surface-2: #282b2e;
+    --text: #e9e7e3;
+    --muted: #9b9891;
+    --line: #34373a;
+    --accent: #6cc39a;
+    --accent-soft: #23342c;
+    --warn: #e2a06d;
+    --warn-soft: #35291f;
+    --danger: #e78a83;
+    --danger-soft: #38241f;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
 }
 
 * { box-sizing: border-box; }
@@ -246,3 +263,13 @@ details.miss-group[open] > summary::after { transform: rotate(180deg); }
 .miss-label { font-weight: 700; }
 details.miss-group > summary .count { margin-left: 0; }
 .more-btn { display: block; width: 100%; margin: .3rem 0 1rem; }
+
+/* --- 初回の案内 --- */
+.notice {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+  padding: .6rem .8rem; margin-bottom: 1rem;
+  background: var(--accent-soft); color: var(--accent);
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  font-size: .82rem;
+}
+.notice button { margin-top: 0; }

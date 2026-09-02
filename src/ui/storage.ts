@@ -42,6 +42,16 @@ function newId(): string {
   return Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
 }
 
+/** 一度でも保存したことがあるか。初回だけ食材の例を入れるための判定。 */
+export function hasEverSaved(): boolean {
+  try {
+    return localStorage.getItem(KEY_ITEMS) !== null;
+  } catch {
+    // localStorage が使えない環境では、毎回「初回」として扱う
+    return false;
+  }
+}
+
 export function loadItems(): InventoryItem[] {
   return read<InventoryItem[]>(KEY_ITEMS, []).filter(
     (i) => i && typeof i.name === 'string' && i.name.trim() !== '',

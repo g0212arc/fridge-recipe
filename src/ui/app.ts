@@ -13,6 +13,25 @@ const index = IngredientIndex.load();
 /** 「ちょい足し」の見出しを最初から出す数。残りはボタンで開く。 */
 const VISIBLE_GROUPS = 12;
 
+/**
+ * 初めて開いた人に入れておく食材の例。
+ *
+ * 空の冷蔵庫だと画面に何も出ず、このアプリが何をするものか分からない。
+ * 例が入っていれば開いた瞬間に提案が並ぶ。もちろん消せる。
+ */
+const SAMPLE_ITEMS: ReadonlyArray<[string, string, number | null]> = [
+  ['鶏もも肉', '肉・魚', 1],
+  ['玉ねぎ', '野菜', null],
+  ['にんじん', '野菜', null],
+  ['じゃがいも', '野菜', null],
+  ['卵', '卵・乳製品', 8],
+];
+
+function isoAfter(days: number): string {
+  const d = new Date(Date.now() + days * 86_400_000);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 interface State {
   items: InventoryItem[];
   settings: Settings;
@@ -375,7 +394,36 @@ function setupImport(): void {
 
 // ---- 起動 ---------------------------------------------------------------
 
+function seedSampleItemsIfFirstRun(): boolean {
+  if (store.hasEverSaved() || state.items.length > 0) return false;
+  for (const [name, category, days] of SAMPLE_ITEMS) {
+    state.items = store.addItem(state.items, name, category, days === null ? null : isoAfter(days));
+  }
+  return true;
+}
+
+function showSampleNotice(): void {
+  const notice = el('div', { className: 'notice' }, [
+    el('span', {
+      textContent: '初めての方向けに、食材の例を入れてあります。',
+    }),
+  ]);
+
+  const clear = el('button', { type: 'button', className: 'ghost small', textContent: '例を消して空にする' });
+  clear.addEventListener('click', () => {
+    for (const item of [...state.items]) state.items = store.removeItem(state.items, item.id);
+    notice.remove();
+    renderInventory();
+    renderSuggestions();
+  });
+  notice.append(clear);
+
+  $('#inventory').before(notice);
+}
+
 export function start(): void {
+  const seeded = seedSampleItemsIfFirstRun();
+
   setupTabs();
   setupAddForm();
   setupSettings();
@@ -383,4 +431,6 @@ export function start(): void {
   renderInventory();
   renderSettings();
   renderSuggestions();
+
+  if (seeded) showSampleNotice();
 }
