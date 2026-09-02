@@ -9,10 +9,32 @@ export interface InventoryItem {
   addedOn: string;
 }
 
+/**
+ * レシピの材料ひとつ。
+ *
+ * 同梱レシピは分量つきのオブジェクト、取り込んだレシピは
+ * `"玉ねぎ 1/2個"` のような1本の文字列で来る。どちらも受け取れるようにしてある。
+ */
+export type Material = string | { name: string; amount?: string };
+
+/** 在庫との突き合わせに使う名前。 */
+export function materialName(material: Material): string {
+  return typeof material === 'string' ? material : material.name;
+}
+
+/** 表示にだけ使う分量。文字列で来た材料には分量が無い。 */
+export function materialAmount(material: Material): string {
+  return typeof material === 'string' ? '' : (material.amount ?? '');
+}
+
 export interface Recipe {
   id: string;
   title: string;
-  materials: string[];
+  materials: Material[];
+  /** 何人分か。同梱レシピにだけある。 */
+  servings?: string;
+  /** 作り方。同梱レシピにだけある。取り込んだレシピは元のサイトへ。 */
+  steps?: string[];
   /** 調理時間の目安。 */
   indication?: string;
   /** 費用の目安。 */

@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { Matcher } from '../matching';
 import { IngredientIndex, loadDefaultSeasonings, pretty } from '../normalize';
 import { builtinRecipes, parseImportedRecipes } from '../recipes';
+import { materialAmount, materialName } from '../types';
 
 const index = IngredientIndex.load();
 const matcher = new Matcher(index, loadDefaultSeasonings());
@@ -23,16 +24,41 @@ describe('同梱レシピ集', () => {
     expect(recipes.filter((r) => r.materials.length === 0)).toEqual([]);
   });
 
+  it('すべてのレシピに何人分・分量・作り方がある', () => {
+    expect(recipes.filter((r) => !r.servings).map((r) => r.title)).toEqual([]);
+    expect(recipes.filter((r) => (r.steps?.length ?? 0) < 3).map((r) => r.title)).toEqual([]);
+    const noAmount = recipes.flatMap((r) =>
+      r.materials.filter((m) => !materialAmount(m)).map((m) => `${r.title}: ${materialName(m)}`),
+    );
+    expect(noAmount).toEqual([]);
+  });
+
+  it('手順のなかの分数が区切りで割れていない', () => {
+    // 手順は「/」区切りで書いてあるが、「2/3を回し入れ」のような分数も「/」を含む。
+    // 割れていると「3を回し入れ」のような数字始まりの断片が残る。
+    const broken = recipes.flatMap((r) =>
+      // 割れた断片は「3を回し入れ」のように、数字のすぐ後ろに助詞が続く形になる。
+      // 「170℃の油で…」のような正しい手順を巻き込まないよう、そこまで見る。
+      (r.steps ?? [])
+        .filter((s) => /^[0-9]+[をのはがでも、]/.test(s))
+        .map((s) => `${r.title}: ${s}`),
+    );
+    expect(broken).toEqual([]);
+  });
+
   it('常備品だけで構成されたレシピが無い（提案に出てこないので）', () => {
     const pantryOnly = recipes.filter((r) =>
-      r.materials.every((m) => matcher.isPantry(index.canonical(m))),
+      r.materials.every((m) => matcher.isPantry(index.canonical(materialName(m)))),
     );
     expect(pantryOnly.map((r) => r.title)).toEqual([]);
   });
 
   it('材料名が正規化で消えない', () => {
     const vanished = recipes.flatMap((r) =>
-      r.materials.filter((m) => index.canonical(m) === '').map((m) => `${r.title}: ${m}`),
+      r.materials
+        .map(materialName)
+        .filter((m) => index.canonical(m) === '')
+        .map((m) => `${r.title}: ${m}`),
     );
     expect(vanished).toEqual([]);
   });
@@ -41,7 +67,11 @@ describe('同梱レシピ集', () => {
     // 辞書に無い材料は pretty() で元の表記を出すので、カタカナ・漢字が保たれる
     const broken = recipes.flatMap((r) =>
       r.materials
-        .map((m) => ({ raw: pretty(m), shown: index.isKnown(index.canonical(m)) ? index.display(index.canonical(m)) : pretty(m) }))
+        .map(materialName)
+        .map((m) => ({
+          raw: pretty(m),
+          shown: index.isKnown(index.canonical(m)) ? index.display(index.canonical(m)) : pretty(m),
+        }))
         .filter((x) => x.shown !== x.raw && !index.isKnown(index.canonical(x.raw)))
         .map((x) => `${r.title}: ${x.raw} → ${x.shown}`),
     );

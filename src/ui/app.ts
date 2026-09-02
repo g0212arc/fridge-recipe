@@ -1,6 +1,6 @@
 /** 画面まわり。2つのタブ（冷蔵庫 / レシピ）を組み立てる。 */
 
-import { Matcher, groupByMissing, type MatchResult } from '../core/matching';
+import { Matcher, groupByMissing, type MatchResult, type MaterialLine } from '../core/matching';
 import { searchLinks } from '../core/links';
 import { IngredientIndex, loadDefaultSeasonings } from '../core/normalize';
 import { builtinRecipes, parseImportedRecipes } from '../core/recipes';
@@ -221,13 +221,71 @@ function setupSettings(): void {
 
 // ---- レシピタブ ---------------------------------------------------------
 
+const STATUS_LABEL: Record<MaterialLine['status'], string> = {
+  have: '冷蔵庫にある',
+  missing: '買う',
+  pantry: '常備品',
+};
+
+/** 材料の一覧。冷蔵庫にあるもの・買うもの・常備品を色で分ける。 */
+function materialList(breakdown: readonly MaterialLine[]): HTMLElement {
+  const list = el('ul', { className: 'materials' });
+  for (const line of breakdown) {
+    list.append(
+      el('li', { className: `material ${line.status}`, title: STATUS_LABEL[line.status] }, [
+        el('span', { className: 'material-name', textContent: line.name }),
+        el('span', { className: 'material-amount', textContent: line.amount }),
+      ]),
+    );
+  }
+  return list;
+}
+
+/** 材料と作り方。開いたときだけ見せる。 */
+function recipeDetails(match: MatchResult, searchUrl: string): HTMLElement {
+  const { recipe } = match;
+  const body: Array<Node | null> = [
+    el('h4', { className: 'detail-head' }, [
+      '材料',
+      recipe.servings ? el('span', { className: 'servings', textContent: recipe.servings }) : null,
+    ]),
+    materialList(match.breakdown),
+  ];
+
+  if (recipe.steps && recipe.steps.length > 0) {
+    const steps = el('ol', { className: 'steps' });
+    for (const step of recipe.steps) steps.append(el('li', { textContent: step }));
+    body.push(el('h4', { className: 'detail-head', textContent: '作り方' }), steps);
+  } else {
+    // 取り込んだレシピには作り方が無い。元のサイトへ送る
+    body.push(
+      el('p', { className: 'hint' }, [
+        '作り方は',
+        el('a', {
+          href: recipe.url || searchUrl,
+          target: '_blank',
+          rel: 'noopener',
+          textContent: 'レシピのページ',
+        }),
+        'で確認してください。',
+      ]),
+    );
+  }
+
+  const details = el('details', { className: 'recipe-detail' }, [
+    el('summary', { textContent: '材料と作り方' }),
+  ]);
+  for (const node of body) if (node) details.append(node);
+  return details;
+}
+
 function recipeCard(match: MatchResult): HTMLElement {
   const { recipe } = match;
   const query = [...match.used.map((i) => i.name), ...match.missing].slice(0, 3).join(' ');
-  const fallbackUrl = `https://cookpad.com/search/${encodeURIComponent(`${recipe.title} ${query}`.trim())}`;
+  const searchUrl = `https://cookpad.com/search/${encodeURIComponent(`${recipe.title} ${query}`.trim())}`;
 
   const title = el('a', {
-    href: recipe.url || fallbackUrl,
+    href: recipe.url || searchUrl,
     target: '_blank',
     rel: 'noopener',
     textContent: recipe.title,
@@ -249,6 +307,7 @@ function recipeCard(match: MatchResult): HTMLElement {
       el('h3', {}, [title]),
       meta ? el('p', { className: 'meta', textContent: meta }) : null,
       tags,
+      recipeDetails(match, searchUrl),
     ]),
   );
   return card;

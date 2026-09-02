@@ -158,3 +158,46 @@ describe('常備品の設定', () => {
     expect(withoutSalt.evaluate(recipe, [item('ごはん')]).missing).toEqual(['塩']);
   });
 });
+
+
+describe('breakdown（材料の内訳）', () => {
+  it('レシピの順番どおりに、状態つきで並ぶ', () => {
+    const r = matcher.evaluate(OYAKODON, [item('鶏もも肉'), item('玉ねぎ')]);
+
+    expect(r.breakdown.map((b) => b.name)).toEqual(OYAKODON.materials);
+    expect(r.breakdown.map((b) => b.status)).toEqual([
+      'have', // 鶏もも肉
+      'have', // 玉ねぎ
+      'missing', // 卵
+      'pantry', // ごはん
+      'pantry', // ☆醤油
+      'pantry', // ☆みりん
+      'pantry', // だし汁
+    ]);
+  });
+
+  it('分量つきの材料は分量も持って回る', () => {
+    const recipe: Recipe = {
+      id: 'a',
+      title: '親子丼',
+      materials: [
+        { name: '鶏もも肉', amount: '200g' },
+        { name: '玉ねぎ', amount: '1/2個' },
+      ],
+    };
+    const r = matcher.evaluate(recipe, [item('鶏もも肉')]);
+
+    expect(r.breakdown).toEqual([
+      { name: '鶏もも肉', amount: '200g', status: 'have' },
+      { name: '玉ねぎ', amount: '1/2個', status: 'missing' },
+    ]);
+  });
+
+  it('同じ材料が2回出ても、不足には1回しか数えない', () => {
+    const recipe: Recipe = { id: 'b', title: 'x', materials: ['卵', '卵黄', '玉ねぎ'] };
+    const r = matcher.evaluate(recipe, [item('玉ねぎ')]);
+
+    expect(r.breakdown).toHaveLength(3); // 表示は省略しない
+    expect(r.missing).toEqual(['卵']); // 数えるのは1回
+  });
+});

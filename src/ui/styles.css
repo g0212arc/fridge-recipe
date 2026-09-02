@@ -273,3 +273,44 @@ details.miss-group > summary .count { margin-left: 0; }
   font-size: .82rem;
 }
 .notice button { margin-top: 0; }
+
+/* --- 材料と作り方 --- */
+.recipe-detail { margin-top: .5rem; }
+.recipe-detail > summary {
+  display: inline-block; cursor: pointer; list-style: none;
+  padding: .2rem .55rem; border-radius: 999px;
+  background: var(--surface-2); color: var(--muted);
+  font-size: .76rem; font-weight: 600;
+}
+.recipe-detail > summary::-webkit-details-marker { display: none; }
+.recipe-detail > summary::after { content: ' ▾'; }
+.recipe-detail[open] > summary::after { content: ' ▴'; }
+.recipe-detail[open] > summary { background: var(--accent-soft); color: var(--accent); }
+
+.detail-head {
+  display: flex; align-items: baseline; gap: .5rem;
+  margin: .8rem 0 .4rem; font-size: .82rem; letter-spacing: .04em;
+}
+.servings { color: var(--muted); font-size: .76rem; font-weight: 400; }
+
+.materials { list-style: none; margin: 0; padding: 0; }
+.material {
+  display: flex; align-items: baseline; gap: .5rem;
+  padding: .22rem 0 .22rem .6rem;
+  border-left: 3px solid var(--line);
+  font-size: .84rem;
+}
+/* 材料の状態を、色と左の線で見分けられるようにする */
+.material.have { border-left-color: var(--accent); }
+.material.missing { border-left-color: var(--warn); }
+.material.missing .material-name { color: var(--warn); font-weight: 700; }
+.material.pantry { border-left-color: var(--line); color: var(--muted); }
+.material-name { flex: 1; }
+.material-amount {
+  color: var(--muted); font-size: .8rem; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.steps { margin: 0; padding-left: 1.3rem; }
+.steps li { margin-bottom: .35rem; font-size: .84rem; line-height: 1.6; }
+.steps li::marker { color: var(--accent); font-weight: 700; }

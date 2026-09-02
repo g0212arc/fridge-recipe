@@ -7,7 +7,13 @@
  */
 
 import { IngredientIndex, pretty } from './normalize';
-import { daysLeft, type InventoryItem, type Recipe } from './types';
+import {
+  daysLeft,
+  materialAmount,
+  materialName,
+  type InventoryItem,
+  type Recipe,
+} from './types';
 
 /** 賞味期限が近い食材を使うレシピを上に出すための重み。 */
 const URGENCY_STEPS: ReadonlyArray<readonly [number, number]> = [
@@ -27,6 +33,15 @@ export function urgencyBonus(left: number | null): number {
   return 0;
 }
 
+/** 材料ひとつが冷蔵庫にあるか、買う必要があるか、常備品か。 */
+export type MaterialStatus = 'have' | 'missing' | 'pantry';
+
+export interface MaterialLine {
+  name: string;
+  amount: string;
+  status: MaterialStatus;
+}
+
 export interface MatchResult {
   recipe: Recipe;
   used: InventoryItem[];
@@ -36,6 +51,8 @@ export interface MatchResult {
   missingKeys: string[];
   /** 常備扱いで数えなかった材料。 */
   pantry: string[];
+  /** 材料をレシピの順番どおりに、状態つきで並べたもの（画面表示用）。 */
+  breakdown: MaterialLine[];
   score: number;
 }
 
@@ -70,28 +87,32 @@ export class Matcher {
     const missingKeys: string[] = [];
     const missing: string[] = [];
     const pantry: string[] = [];
+    const breakdown: MaterialLine[] = [];
     const seen = new Set<string>();
 
-    for (const raw of recipe.materials) {
+    for (const material of recipe.materials) {
+      const raw = materialName(material);
       const canon = this.index.canonical(raw);
-      if (!canon || seen.has(canon)) continue;
+      if (!canon) continue;
+
+      // 辞書に無い材料は、ひらがなに崩れた正規化結果ではなく元の表記を見せる
+      const label = this.index.isKnown(canon) ? this.index.display(canon) : pretty(raw);
+      const hit = canonItems.find((entry) => this.index.covers(entry.canon, canon));
+      const status: MaterialStatus = hit ? 'have' : this.isPantry(canon) ? 'pantry' : 'missing';
+
+      // 表示用の内訳はレシピの順番どおりに、重複も省かずそのまま並べる
+      breakdown.push({ name: raw, amount: materialAmount(material), status });
+
+      if (seen.has(canon)) continue;
       seen.add(canon);
 
-      const hit = canonItems.find((entry) => this.index.covers(entry.canon, canon));
       if (hit) {
         if (!used.has(hit.item.id)) used.set(hit.item.id, hit.item);
-        continue;
-      }
-
-      if (this.isPantry(canon)) {
-        pantry.push(this.index.isKnown(canon) ? this.index.display(canon) : pretty(raw));
-        continue;
-      }
-
-      if (!missingKeys.includes(canon)) {
+      } else if (status === 'pantry') {
+        pantry.push(label);
+      } else {
         missingKeys.push(canon);
-        // 辞書に無い材料は、ひらがなに崩れた正規化結果ではなく元の表記を見せる
-        missing.push(this.index.isKnown(canon) ? this.index.display(canon) : pretty(raw));
+        missing.push(label);
       }
     }
 
@@ -100,7 +121,7 @@ export class Matcher {
       USED_ITEM_WEIGHT * usedItems.length +
       usedItems.reduce((sum, item) => sum + urgencyBonus(daysLeft(item, this.today)), 0);
 
-    return { recipe, used: usedItems, missing, missingKeys, pantry, score };
+    return { recipe, used: usedItems, missing, missingKeys, pantry, breakdown, score };
   }
 
   /** レシピを「いま作れる」「ちょい足し」に仕分けて返す。 */
