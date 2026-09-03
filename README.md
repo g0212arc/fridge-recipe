@@ -93,10 +93,11 @@ python3 tools/fetch_rakuten.py 豚肉 玉ねぎ キャベツ
 
 `main` に push すると GitHub Actions がビルドして GitHub Pages に公開します。
 
-初回だけ、リポジトリの **Settings → Pages → Build and deployment → Source** を
-**「GitHub Actions」** にしてください。ここが未設定だとワークフローが
-`Get Pages site failed` で落ちます（ワークフローのトークンには Pages を
-作成する権限が無いため、この一手だけは手作業になります）。
+Pages の有効化はワークフローが自分で行うので、設定画面での操作は要りません。
+
+ただし **リポジトリが公開であること**が前提です。無料プランでは
+プライベートリポジトリで GitHub Pages を使えません（有料の Pro 以上が必要）。
+非公開のまま配信したい場合は、Cloudflare Pages や Netlify を使ってください。
 
 ## 開発
 

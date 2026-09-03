@@ -27,10 +27,12 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      # Pages の有効化はワークフローのトークンでは行えない
-      # （create-a-pages-site が Resource not accessible by integration で落ちる）。
-      # リポジトリの Settings → Pages → Source を "GitHub Actions" にする初回設定が要る。
+      # enablement: true で、Pages が未設定でもワークフローが自分で有効化する。
+      # 無料プランではプライベートリポジトリで Pages を使えないため、
+      # リポジトリが公開であることが前提。
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
